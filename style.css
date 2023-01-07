@@ -194,6 +194,8 @@ footer p {
   line-height: 3;
 }
 
+
+/* Aturan CSS yang akan diterapkan pada Dekstop dengan resolusi tinggi */
 @media (min-width: 1440px) {
   /* HEADER STYLE */
   header,
@@ -334,62 +336,32 @@ footer p {
   }
 }
 
+/* Aturan CSS yang akan diterapkan pada tablet dengan resolusi standar */
 @media (min-width: 768px) and (max-width: 1023px) {
-  /* Aturan CSS yang akan diterapkan pada tablet dengan resolusi standar */
-
   .container {
     margin: 14px;
   }
-
-  /* HEADER STYLE */
-  /* header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  } */
 
   header > a {
     width: 300px;
     margin-left: 20px;
   }
 
-  /* header a img {
-    width: 100%;
-    height: 100%;
-  } */
-
   nav {
     width: 550px;
   }
 
   nav ul {
-    /* width: 100%;
-    height: 100%;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center; */
     gap: 18px;
   }
 
   nav ul li a {
-    /* display: inline-block; */
-    padding: 0px 24px 12px;
-    /* text-decoration: none;
-    color: #000;
-    font-family: "Average Sans"; */
+    padding: 0px 25px 12px;
     font-size: 22px;
-  }
-
-  nav li > a:hover {
-    cursor: pointer;
-    border-bottom: 1px #000 solid;
   }
 
   /* MAIN STYLE */
   main {
-    margin-top: 25px;
     flex-direction: column;
     align-items: center;
   }
@@ -447,27 +419,130 @@ footer p {
 
   .my-media {
     margin-top: 18px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     gap: 24px;
   }
 
   .my-media a {
-    display: inline-block;
     width: 50px;
     height: 50px;
   }
 
-  .my-media a:hover {
-    opacity: 80%;
-    cursor: pointer;
+  .undermedia-style {
+    width: 125px;
+    margin-top: 50px;
   }
 
-  .my-media a img {
-    width: 100%;
-    height: 100%;
+
+  /* FOOTER STYLE */
+  footer {
+    height: 50px;
+    margin-top: 25px;
   }
+
+  footer p {
+    font-size: 14px;
+    line-height: 3.5;
+  }
+  
+}
+
+
+/* Aturan CSS yang akan diterapkan pada tablet dengan resolusi standar */
+@media (max-width: 1024px) and (min-height: 1366px) {
+  .container {
+    margin: 14px;
+  }
+
+  header > a {
+    width: 300px;
+    margin-left: 20px;
+  }
+
+  nav {
+    width: 550px;
+  }
+
+  nav ul {
+    gap: 18px;
+  }
+
+  nav ul li a {
+    padding: 0px 25px 12px;
+    font-size: 22px;
+  }
+
+  /* MAIN STYLE */
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero,
+  .content {
+    width: 60%;
+  }
+
+  .hero {
+    position: initial;
+  }
+
+  .hero img {
+    width: 550px;
+    transform: translateX(2%);
+    position: initial;
+  }
+
+  .content {
+    margin-top: 0px;
+  }
+
+  .biodata {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .undername-style h1 {
+    font-size: 60px;
+    letter-spacing: 1.5px;
+  }
+
+  .undername {
+    width: 130px;
+    height: 22px;
+    top: 118px;
+    left: 88px;
+  }
+
+  .biodata p {
+    margin-top: 12px;
+    font-size: 22px;
+    width: 470px;
+  }
+
+  .social-media {
+    width: 250px;
+    margin: 60px auto 0;
+  }
+
+  .social-media h2 {
+    font-size: 28px;
+  }
+
+  .my-media {
+    margin-top: 18px;
+    gap: 24px;
+  }
+
+  .my-media a {
+    width: 50px;
+    height: 50px;
+  }
+
+  .undermedia-style {
+    width: 125px;
+    margin-top: 50px;
+  }
+
 
   /* FOOTER STYLE */
   footer {
