@@ -341,9 +341,24 @@ footer p {
     margin: 14px;
   }
 
+  /* HEADER STYLE */
   header > a {
     width: 300px;
     margin-left: 20px;
+  }
+
+  nav {
+    width: 450px;
+  }
+
+  nav ul {
+    gap: 0;
+  }
+
+  nav ul li a {
+    padding: 5px 18px 9px;
+    font-size: 18px;
+    margin-left: 8px;
   }
 
   /* MAIN STYLE */
@@ -377,15 +392,15 @@ footer p {
   }
 
   .undername-style h1 {
-    font-size: 60px;
-    letter-spacing: 1.5px;
+    font-size: 53px;
+    letter-spacing: 1px;
   }
 
   .undername {
-    width: 130px;
+    width: 120px;
     height: 22px;
-    top: 118px;
-    left: 88px;
+    top: 105px;
+    left: 75px;
   }
 
   .biodata p {
@@ -430,12 +445,200 @@ footer p {
   }
 }
 
-/* Aturan CSS yang akan diterapkan pada tablet dengan resolusi standar */
+/* SMALLEST HERO IMAGE AND FONT */
+@media (max-width: 870px) {
+  /* MAIN STYLE */
+  .hero img {
+    width: 100%;
+  }
+
+  .biodata {
+    width: 400px;
+  }
+
+  .biodata p {
+    width: 400px;
+  }
+}
+
+/* Smartphones (portrait and landscape) */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .container {
+    width: 100vw;
+    margin: 0;
+  }
+
+  /* HEADER STYLE */
+  header > a {
+    margin: 12px auto;
+    width: 220px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  /* MAIN STYLE */
+  main {
+    flex-direction: column;
+  }
+
+  .hero {
+    position: initial;
+    width: 83vw;
+    margin: 12px auto;
+  }
+
+  .hero img {
+    position: initial;
+    width: 100%;
+  }
+
+  .content {
+    width: 83vw;
+    margin: 12px auto;
+  }
+
+  .biodata {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .undername-style h1 {
+    font-size: 38px;
+    letter-spacing: 0;
+  }
+
+  .undername {
+    width: 80px;
+    height: 14px;
+    top: 75px;
+    left: 50px;
+  }
+
+  .biodata p {
+    width: 275px;
+    font-size: 14px;
+  }
+
+  .social-media {
+    margin: 40px auto 0;
+    width: 200px;
+  }
+
+  .social-media h2 {
+    font-size: 20px;
+  }
+
+  .my-media {
+    gap: 10px;
+  }
+
+  .my-media a {
+    height: 42px;
+    width: 42px;
+  }
+
+  .undermedia-style {
+    margin-top: 40px;
+    width: 70px;
+    height: 2px;
+  }
+
+  /* FOOTER STYLE */
+  footer {
+    height: 50px;
+    width: 100vw;
+  }
+
+  footer p {
+    line-height: 4.5;
+  }
+}
+
+/* SMALLEST FONT ON MAIN CONTENT */
+@media (max-width: 388px) {
+  /* HEADER STYLE */
+  header > a {
+    width: 190px;
+  }
+
+  /* MAIN STYLE */
+  main {
+    margin-top: -2px;
+  }
+
+  .content {
+    margin-top: -20px;
+  }
+
+  .biodata {
+    width: 80%;
+  }
+
+  .undername-style h1 {
+    font-size: 29px;
+  }
+
+  .undername {
+    top: 58px;
+    left: 38px;
+    width: 65px;
+    height: 12px;
+  }
+
+  .biodata p {
+    font-size: 11px;
+    width: 220px;
+  }
+
+  .social-media {
+    width: 150px;
+    margin-top: 30px;
+  }
+
+  .social-media h2 {
+    font-size: 14px;
+  }
+
+  .my-media {
+    gap: 10px;
+  }
+
+  .my-media a {
+    width: 32px;
+    height: 32px;
+  }
+
+  .undermedia-style {
+    width: 60px;
+    margin-top: 30px;
+  }
+
+  /* FOOTER STYLE */
+  footer {
+    margin-top: 0;
+    height: 45px;
+  }
+
+  footer p {
+    font-size: 8px;
+    line-height: 5;
+  }
+}
+
+/* Smartphones (landscape) */
+@media only screen and (min-width: 481px) {
+}
+
+
+/* CUSTOMIZE MEDIA QUERY FOR SPECIFIC TARGET */
 @media (max-width: 1024px) and (min-height: 1366px) {
   .container {
     margin: 14px;
   }
 
+  /* HEADER STYLE */
   header > a {
     width: 300px;
     margin-left: 20px;
@@ -535,5 +738,22 @@ footer p {
   footer p {
     font-size: 14px;
     line-height: 3.5;
+  }
+}
+
+@media (max-width: 912px) and (min-height: 1368px) {
+  nav ul li a {
+    padding: 6px 20px 8px;
+  }
+}
+
+@media (max-width: 1280px) and (min-height: 800px) {
+  footer {
+    height: 50px
+  }
+
+  footer p {
+    font-size: 12px;
+    line-height: 4.2;
   }
 }
