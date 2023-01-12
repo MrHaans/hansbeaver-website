@@ -628,7 +628,254 @@ footer p {
 }
 
 /* Smartphones (landscape) */
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+  .container {
+    margin: 8px;
+  }
+
+  /* HEADER STYLE */
+  header > a {
+    width: 350px;
+    margin: 15px auto;
+  }
+
+  nav {
+    display: none;
+  }
+
+  /* MAIN STYLE */
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero,
+  .content {
+    width: 80%;
+  }
+
+  .hero {
+    position: initial;
+  }
+
+  .hero img {
+    width: 100%;
+    position: initial;
+  }
+
+  .content {
+    margin-top: 20px;
+  }
+
+  .biodata {
+    width: 450px;
+    margin: 0 auto;
+  }
+
+  .undername-style h1 {
+    font-size: 53px;
+    letter-spacing: 0.5px;
+  }
+
+  .undername {
+    width: 115px;
+    height: 22px;
+    top: 105px;
+    left: 75px;
+  }
+
+  .biodata p {
+    margin-top: 12px;
+    font-size: 22px;
+    width: 400px;
+  }
+
+  .social-media {
+    margin: 50px auto 0;
+    width: 200px;
+  }
+
+  .social-media h2 {
+    font-size: 28px;
+  }
+
+  .my-media {
+    gap: 14px;
+  }
+
+  .my-media a {
+    height: 52px;
+    width: 52px;
+  }
+
+  .undermedia-style {
+    margin-top: 60px;
+    width: 70px;
+    height: 2px;
+  }
+
+  /* FOOTER STYLE */
+  footer {
+    margin-top: 24px;
+    height: 45px;
+  }
+
+  footer p {
+    font-size: 8px;
+    line-height: 5;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 580px) {
+
+  /* HEADER STYLE */
+  header a {
+    width: 350px;
+  }
+
+  /* MAIN STYLE */
+  .hero,
+  .content {
+    width: 90%;
+  }
+
+  .biodata {
+    width: 370px;
+  }
+
+  .undername-style h1 {
+    font-size: 48px;
+    letter-spacing: 0;
+  }
+
+  .undername {
+    top: 95px;
+    left: 65px;
+    width: 105px;
+    height: 20px;
+  }
+
+  .biodata p {
+    width: 330px;
+  }
+
+  .social-media {
+    margin: 45px auto 0;
+  }
+
+  .social-media h2 {
+    font-size: 26px;
+  }
+
+  .my-media {
+    gap: 12px;
+  }
+
+  .my-media a {
+    height: 50px;
+    width: 50px;
+  }
+
+  .undermedia-style {
+    margin-top: 60px;
+    width: 70px;
+    height: 2px;
+  }
+}
+
+@media (max-width: 319px) {
+  .container {
+    width: 100vw;
+    margin: 0;
+  }
+
+  /* HEADER STYLE */
+  header > a {
+    margin: 12px auto;
+    width: 180px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  /* MAIN STYLE */
+  main {
+    flex-direction: column;
+  }
+
+  .hero {
+    position: initial;
+    width: 83vw;
+    margin: 12px auto;
+  }
+
+  .hero img {
+    position: initial;
+    width: 100%;
+  }
+
+  .content {
+    width: 83vw;
+    margin: 12px auto;
+  }
+
+  .biodata {
+    width: 220px;
+    margin: 0 auto;
+  }
+
+  .undername-style h1 {
+    font-size: 28px;
+    letter-spacing: 0;
+  }
+
+  .undername {
+    width: 60px;
+    height: 12px;
+    top: 55px;
+    left: 40px;
+  }
+
+  .biodata p {
+    width: 200px;
+    font-size: 12px;
+  }
+
+  .social-media {
+    margin: 40px auto 0;
+    width: 200px;
+  }
+
+  .social-media h2 {
+    font-size: 18px;
+  }
+
+  .my-media {
+    gap: 8px;
+  }
+
+  .my-media a {
+    height: 32px;
+    width: 32px;
+  }
+
+  .undermedia-style {
+    margin-top: 40px;
+    width: 70px;
+    height: 2px;
+  }
+
+  /* FOOTER STYLE */
+  footer {
+    height: 40px;
+    width: 100vw;
+  }
+
+  footer p {
+    line-height: 5;
+  }
 }
 
 
@@ -738,6 +985,456 @@ footer p {
   footer p {
     font-size: 14px;
     line-height: 3.5;
+  }
+}
+
+@media (max-width: 1023px) and (min-height: 1366px){
+  .container {
+    margin: 14px;
+  }
+
+  /* HEADER STYLE */
+  header > a {
+    width: 300px;
+    margin-left: 20px;
+  }
+
+  nav {
+    width: 450px;
+  }
+
+  nav ul {
+    gap: 0;
+  }
+
+  nav ul li a {
+    padding: 5px 18px 9px;
+    font-size: 18px;
+    margin-left: 8px;
+  }
+
+  /* MAIN STYLE */
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero,
+  .content {
+    width: 65%;
+  }
+
+  .hero {
+    position: initial;
+  }
+
+  .hero img {
+    width: 90%;
+    position: initial;
+  }
+
+  .content {
+    margin-top: 0px;
+  }
+
+  .biodata {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .undername-style h1 {
+    font-size: 45px;
+    letter-spacing: 0.5px;
+  }
+
+  .undername {
+    width: 98px;
+    height: 22px;
+    top: 85px;
+    left: 65px;
+  }
+
+  .biodata p {
+    margin-top: 12px;
+    font-size: 22px;
+    width: 330px;
+  }
+
+  .social-media {
+    width: 250px;
+    margin: 60px auto 0;
+  }
+
+  .social-media h2 {
+    font-size: 28px;
+  }
+
+  .my-media {
+    margin-top: 18px;
+    gap: 24px;
+  }
+
+  .my-media a {
+    width: 50px;
+    height: 50px;
+  }
+
+  .undermedia-style {
+    width: 125px;
+    margin-top: 50px;
+  }
+
+  /* FOOTER STYLE */
+  footer {
+    height: 50px;
+    margin-top: 25px;
+  }
+
+  footer p {
+    font-size: 14px;
+    line-height: 3.5;
+  }
+}
+
+@media (max-width: 767px) and (min-height: 1366px) {
+  .container {
+    margin: 8px;
+  }
+
+  /* HEADER STYLE */
+  header > a {
+    width: 350px;
+    margin: 15px auto;
+  }
+
+  nav {
+    display: none;
+  }
+
+  /* MAIN STYLE */
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero,
+  .content {
+    width: 80%;
+  }
+
+  .hero {
+    position: initial;
+  }
+
+  .hero img {
+    width: 100%;
+    position: initial;
+  }
+
+  .content {
+    margin-top: 20px;
+  }
+
+  .biodata {
+    width: 450px;
+    margin: 0 auto;
+  }
+
+  .undername-style h1 {
+    font-size: 53px;
+    letter-spacing: 0.5px;
+  }
+
+  .undername {
+    width: 115px;
+    height: 22px;
+    top: 105px;
+    left: 75px;
+  }
+
+  .biodata p {
+    margin-top: 12px;
+    font-size: 22px;
+    width: 400px;
+  }
+
+  .social-media {
+    margin: 50px auto 0;
+    width: 200px;
+  }
+
+  .social-media h2 {
+    font-size: 28px;
+  }
+
+  .my-media {
+    gap: 14px;
+  }
+
+  .my-media a {
+    height: 52px;
+    width: 52px;
+  }
+
+  .undermedia-style {
+    margin-top: 60px;
+    width: 70px;
+    height: 2px;
+  }
+
+  /* FOOTER STYLE */
+  footer {
+    margin-top: 24px;
+    height: 45px;
+  }
+
+  footer p {
+    font-size: 8px;
+    line-height: 5;
+  }
+}
+
+@media (max-width: 580px) and (min-height: 1366px) {
+  /* HEADER STYLE */
+  header a {
+    width: 350px;
+  }
+
+  /* MAIN STYLE */
+  .hero,
+  .content {
+    width: 90%;
+  }
+
+  .biodata {
+    width: 370px;
+  }
+
+  .undername-style h1 {
+    font-size: 48px;
+    letter-spacing: 0;
+  }
+
+  .undername {
+    top: 95px;
+    left: 65px;
+    width: 105px;
+    height: 20px;
+  }
+
+  .biodata p {
+    width: 330px;
+  }
+
+  .social-media {
+    margin: 45px auto 0;
+  }
+
+  .social-media h2 {
+    font-size: 26px;
+  }
+
+  .my-media {
+    gap: 12px;
+  }
+
+  .my-media a {
+    height: 50px;
+    width: 50px;
+  }
+
+  .undermedia-style {
+    margin-top: 60px;
+    width: 70px;
+    height: 2px;
+  }
+}
+
+@media (max-device-width: 480px) and (min-height: 1366px) {
+  .container {
+    width: 100vw;
+    margin: 0;
+  }
+
+  /* HEADER STYLE */
+  header > a {
+    margin: 12px auto;
+    width: 220px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  /* MAIN STYLE */
+  main {
+    flex-direction: column;
+  }
+
+  .hero {
+    position: initial;
+    width: 83vw;
+    margin: 12px auto;
+  }
+
+  .hero img {
+    position: initial;
+    width: 100%;
+  }
+
+  .content {
+    width: 83vw;
+    margin: 12px auto;
+  }
+
+  .biodata {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .undername-style h1 {
+    font-size: 38px;
+    letter-spacing: 0;
+  }
+
+  .undername {
+    width: 80px;
+    height: 14px;
+    top: 75px;
+    left: 50px;
+  }
+
+  .biodata p {
+    width: 275px;
+    font-size: 14px;
+  }
+
+  .social-media {
+    margin: 40px auto 0;
+    width: 200px;
+  }
+
+  .social-media h2 {
+    font-size: 20px;
+  }
+
+  .my-media {
+    gap: 10px;
+  }
+
+  .my-media a {
+    height: 42px;
+    width: 42px;
+  }
+
+  .undermedia-style {
+    margin-top: 40px;
+    width: 70px;
+    height: 2px;
+  }
+
+  /* FOOTER STYLE */
+  footer {
+    height: 50px;
+    width: 100vw;
+  }
+
+  footer p {
+    line-height: 4.5;
+  }
+}
+
+@media (max-width: 319px) and (min-height: 1366px) {
+  .container {
+    width: 100vw;
+    margin: 0;
+  }
+
+  /* HEADER STYLE */
+  header > a {
+    margin: 12px auto;
+    width: 180px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  /* MAIN STYLE */
+  main {
+    flex-direction: column;
+  }
+
+  .hero {
+    position: initial;
+    width: 83vw;
+    margin: 12px auto;
+  }
+
+  .hero img {
+    position: initial;
+    width: 100%;
+  }
+
+  .content {
+    width: 83vw;
+    margin: 12px auto;
+  }
+
+  .biodata {
+    width: 220px;
+    margin: 0 auto;
+  }
+
+  .undername-style h1 {
+    font-size: 28px;
+    letter-spacing: 0;
+  }
+
+  .undername {
+    width: 60px;
+    height: 12px;
+    top: 55px;
+    left: 40px;
+  }
+
+  .biodata p {
+    width: 200px;
+    font-size: 12px;
+  }
+
+  .social-media {
+    margin: 40px auto 0;
+    width: 200px;
+  }
+
+  .social-media h2 {
+    font-size: 18px;
+  }
+
+  .my-media {
+    gap: 8px;
+  }
+
+  .my-media a {
+    height: 32px;
+    width: 32px;
+  }
+
+  .undermedia-style {
+    margin-top: 40px;
+    width: 70px;
+    height: 2px;
+  }
+
+  /* FOOTER STYLE */
+  footer {
+    height: 40px;
+    width: 100vw;
+  }
+
+  footer p {
+    line-height: 5;
   }
 }
 
