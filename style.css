@@ -22,6 +22,11 @@ body {
   margin: 25px;
 }
 
+/* STYLE CUSTOMIZE BORDER IN SMALLEST NAVBAR */
+.bd-left {
+  display: none;
+}
+
 /* HEADER STYLE */
 header {
   display: flex;
@@ -461,101 +466,6 @@ footer p {
   }
 }
 
-/* Smartphones (portrait and landscape) */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  .container {
-    width: 100vw;
-    margin: 0;
-  }
-
-  /* HEADER STYLE */
-  header > a {
-    margin: 12px auto;
-    width: 220px;
-  }
-
-  nav {
-    display: none;
-  }
-
-  /* MAIN STYLE */
-  main {
-    flex-direction: column;
-  }
-
-  .hero {
-    position: initial;
-    width: 83vw;
-    margin: 12px auto;
-  }
-
-  .hero img {
-    position: initial;
-    width: 100%;
-  }
-
-  .content {
-    width: 83vw;
-    margin: 12px auto;
-  }
-
-  .biodata {
-    width: 300px;
-    margin: 0 auto;
-  }
-
-  .undername-style h1 {
-    font-size: 38px;
-    letter-spacing: 0;
-  }
-
-  .undername {
-    width: 80px;
-    height: 14px;
-    top: 75px;
-    left: 50px;
-  }
-
-  .biodata p {
-    width: 275px;
-    font-size: 14px;
-  }
-
-  .social-media {
-    margin: 40px auto 0;
-    width: 200px;
-  }
-
-  .social-media h2 {
-    font-size: 20px;
-  }
-
-  .my-media {
-    gap: 10px;
-  }
-
-  .my-media a {
-    height: 42px;
-    width: 42px;
-  }
-
-  .undermedia-style {
-    margin-top: 40px;
-    width: 70px;
-    height: 2px;
-  }
-
-  /* FOOTER STYLE */
-  footer {
-    height: 50px;
-    width: 100vw;
-  }
-
-  footer p {
-    line-height: 4.5;
-  }
-}
-
 /* SMALLEST FONT ON MAIN CONTENT */
 @media (max-width: 388px) {
   /* HEADER STYLE */
@@ -629,9 +539,14 @@ footer p {
 
 /* Smartphones (landscape) */
 @media only screen and (min-width: 481px) and (max-width: 767px) {
-
   .container {
     margin: 8px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
   }
 
   /* HEADER STYLE */
@@ -641,7 +556,33 @@ footer p {
   }
 
   nav {
-    display: none;
+    width: 103%;
+    height: 50px;
+    background-color: #c58940;
+    margin-bottom: 6px;
+  }
+
+  nav ul {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .bd-left {
+    display: inline-block;
+    width: 2px;
+    height: 18px;
+    background-color: #825a2a;
+  }
+
+  nav ul li a {
+    padding: 8px 30px;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+
+  nav ul li a:hover {
+    background-color: #825a2a;
+    border: none;
   }
 
   /* MAIN STYLE */
@@ -727,60 +668,181 @@ footer p {
   }
 }
 
-@media (min-width: 481px) and (max-width: 580px) {
+@media (max-width: 536px) {
+  nav ul {
+    gap: 6px;
+  }
+
+  nav ul li a {
+    padding: 6px 16px;
+    font-size: 18px;
+  }
+
+  .undername-style,
+  .biodata {
+    width: 390px;
+  }
+}
+
+/* Smartphones (portrait and landscape) */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .container {
+    width: 100vw;
+    margin: 0;
+  }
+
+  body {
+    height: 102vh;
+  }
 
   /* HEADER STYLE */
-  header a {
-    width: 350px;
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+
+  header > a {
+    margin: 12px auto;
+    width: 220px;
+  }
+
+  nav {
+    display: inline-block;
+    width: 103%;
+    height: 40px;
+    background-color: #c58940;
+    margin-bottom: 6px;
+  }
+
+  nav ul {
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .bd-left {
+    display: inline-block;
+    width: 2px;
+    height: 18px;
+    background-color: #825a2a;
+  }
+
+  nav ul li a {
+    padding: 6px 16px;
+    font-size: 14px;
+    border-radius: 20px;
+  }
+
+  nav ul li a:hover {
+    background-color: #825a2a;
+    border: none;
   }
 
   /* MAIN STYLE */
-  .hero,
+  main {
+    flex-direction: column;
+  }
+
+  .hero {
+    position: initial;
+    width: 83vw;
+    margin: 12px auto;
+  }
+
+  .hero img {
+    position: initial;
+    width: 100%;
+  }
+
   .content {
-    width: 90%;
+    width: 83vw;
+    margin: 12px auto;
   }
 
   .biodata {
-    width: 370px;
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .undername-style {
+    width: 300px;
   }
 
   .undername-style h1 {
-    font-size: 48px;
+    font-size: 38px;
     letter-spacing: 0;
+    width: fit-content;
   }
 
   .undername {
-    top: 95px;
-    left: 65px;
-    width: 105px;
-    height: 20px;
+    width: 80px;
+    height: 14px;
+    top: 75px;
+    left: 50px;
   }
 
   .biodata p {
-    width: 330px;
+    width: 275px;
+    font-size: 14px;
   }
 
   .social-media {
-    margin: 45px auto 0;
+    margin: 40px auto 0;
+    width: 200px;
   }
 
   .social-media h2 {
-    font-size: 26px;
+    font-size: 20px;
   }
 
   .my-media {
-    gap: 12px;
+    gap: 10px;
   }
 
   .my-media a {
-    height: 50px;
-    width: 50px;
+    height: 42px;
+    width: 42px;
   }
 
   .undermedia-style {
-    margin-top: 60px;
+    margin-top: 40px;
     width: 70px;
     height: 2px;
+  }
+
+  /* FOOTER STYLE */
+  footer {
+    height: 50px;
+    width: 101vw;
+  }
+
+  footer p {
+    line-height: 4.5;
+  }
+}
+
+@media (max-width: 388px) {
+  header {
+    gap: 0;
+  }
+
+  nav {
+    height: 35px;
+    margin-bottom: 24px;
+  }
+
+  nav ul {
+    gap: 5px;
+  }
+
+  .bd-left {
+    width: 1.5px;
+    height: 12px;
+  }
+
+  nav ul li a {
+    padding: 4px 12px;
+    font-size: 13px;
   }
 }
 
@@ -798,6 +860,63 @@ footer p {
 
   nav {
     display: none;
+  }
+  
+
+  @media (min-width: 481px) and (max-width: 580px) {
+    /* HEADER STYLE */
+    header > a {
+      width: 350px;
+    }
+
+    /* MAIN STYLE */
+    .hero,
+    .content {
+      width: 90%;
+    }
+
+    .biodata {
+      width: 370px;
+    }
+
+    .undername-style h1 {
+      font-size: 48px;
+      letter-spacing: 0;
+    }
+
+    .undername {
+      top: 95px;
+      left: 65px;
+      width: 105px;
+      height: 20px;
+    }
+
+    .biodata p {
+      width: 330px;
+    }
+
+    .social-media {
+      margin: 45px auto 0;
+    }
+
+    .social-media h2 {
+      font-size: 26px;
+    }
+
+    .my-media {
+      gap: 12px;
+    }
+
+    .my-media a {
+      height: 50px;
+      width: 50px;
+    }
+
+    .undermedia-style {
+      margin-top: 60px;
+      width: 70px;
+      height: 2px;
+    }
   }
 
   /* MAIN STYLE */
@@ -877,7 +996,6 @@ footer p {
     line-height: 5;
   }
 }
-
 
 /* CUSTOMIZE MEDIA QUERY FOR SPECIFIC TARGET */
 @media (max-width: 1024px) and (min-height: 1366px) {
@@ -988,7 +1106,7 @@ footer p {
   }
 }
 
-@media (max-width: 1023px) and (min-height: 1366px){
+@media (max-width: 1023px) and (min-height: 1366px) {
   .container {
     margin: 14px;
   }
@@ -1446,7 +1564,7 @@ footer p {
 
 @media (max-width: 1280px) and (min-height: 800px) {
   footer {
-    height: 50px
+    height: 50px;
   }
 
   footer p {
