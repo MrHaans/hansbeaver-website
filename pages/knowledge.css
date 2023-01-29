@@ -70,7 +70,8 @@ nav ul li a {
   font-size: 18px;
 }
 
-nav li > a:hover {
+nav li > a:hover,
+nav li > a.active {
   cursor: pointer;
   border-bottom: 1px #000 solid;
 }
@@ -493,7 +494,8 @@ footer p {
     border-radius: 20px;
   }
 
-  nav ul li a:hover {
+  nav ul li a:hover,
+  nav li > a.active {
     background-color: #825a2a;
     border: none;
   }
@@ -659,7 +661,8 @@ footer p {
     border-radius: 20px;
   }
 
-  nav ul li a:hover {
+  nav ul li a:hover,
+  nav li > a.active {
     background-color: #825a2a;
     border: none;
   }
@@ -830,7 +833,8 @@ footer p {
     border-radius: 20px;
   }
 
-  nav ul li a:hover {
+  nav ul li a:hover,
+  nav li > a.active {
     background-color: #825a2a;
     border: none;
   }

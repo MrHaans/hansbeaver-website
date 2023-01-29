@@ -9,7 +9,7 @@
     <title>Hans Beaver Website</title>
   </head>
 
-  <body>
+  <body id="home">
     <div class="container">
       <header>
         <a href="index.html"
@@ -18,13 +18,13 @@
 
         <nav>
           <ul>
-            <li><a href="index.html">About</a></li>
+            <li class="links"><a data-active="home" href="index.html">About</a></li>
             <span class="bd-left"></span>
-            <li><a href="pages/project.html">Project</a></li>
+            <li class="links"><a data-active="project" href="pages/project.html">Project</a></li>
             <span class="bd-left"></span>
-            <li><a href="pages/knowledge.html">Knowledge</a></li>
+            <li class="links"><a data-active="knowledge" href="pages/knowledge.html">Knowledge</a></li>
             <span class="bd-left"></span>
-            <li><a href="pages/contact.html">Contact</a></li>
+            <li class="links"><a data-active="contact" href="pages/contact.html">Contact</a></li>
           </ul>
         </nav>
       </header>
@@ -75,5 +75,8 @@
     <footer>
       <p>Personal Website, Copyright Hans Beaver 2023.</p>
     </footer>
+
+    <!-- JS SCRIPT -->
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
