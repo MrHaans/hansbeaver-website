@@ -623,7 +623,7 @@ footer p {
 
   .undername {
     width: 115px;
-    height: 22px;
+    height: 24px;
     top: 105px;
     left: 75px;
   }
@@ -778,8 +778,8 @@ footer p {
   }
 
   .undername {
-    width: 80px;
-    height: 14px;
+    width: 85px;
+    height: 18px;
     top: 75px;
     left: 50px;
   }
@@ -830,7 +830,7 @@ footer p {
   }
 
   nav {
-    height: 35px;
+    height: 40px;
     margin-bottom: 24px;
   }
 
@@ -840,12 +840,17 @@ footer p {
 
   .bd-left {
     width: 1.5px;
-    height: 12px;
+    height: 16px;
   }
 
   nav ul li a {
-    padding: 4px 12px;
+    padding: 7px 18px;
     font-size: 13px;
+  }
+
+  .undername {
+    height: 18px;
+    width: 85px;
   }
 }
 
@@ -1683,6 +1688,10 @@ footer p {
 @media (max-width: 319px) {
   .undername-style {
     width: 100%;
+  }
+
+  .undername {
+    height: 14px;
   }
 
   header {

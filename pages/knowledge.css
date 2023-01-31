@@ -118,7 +118,7 @@ strong {
 .undername {
   width: 310px;
   height: 25px;
-  background-color: #99d7a7;
+  background-color: #7fcd91;
   border-radius: 20px;
   position: absolute;
   top: 25px;
@@ -501,6 +501,10 @@ footer p {
   }
 
   /* MAIN STYLE */
+  main {
+    margin-bottom: 25px;
+  }
+
   .information {
     margin: 24px 4px -20px;
     padding: 6px;
@@ -591,6 +595,7 @@ footer p {
 
   /* FOOTER STYLE */
   footer {
+    margin-top: 30px;
     height: 45px;
   }
 
@@ -668,6 +673,10 @@ footer p {
   }
 
   /* MAIN STYLE */
+  main {
+    margin-bottom: 25px;
+  }
+
   .information {
     margin: 16px 5px -18px;
     padding: 6px;
@@ -769,6 +778,7 @@ footer p {
 
   /* FOOTER STYLE */
   footer {
+    margin-top: 30px;
     height: 50px;
     width: 101vw;
   }
@@ -840,6 +850,10 @@ footer p {
   }
 
   /* MAIN STYLE */
+  main {
+    margin-bottom: 25px;
+  }
+
   .information {
     margin: 12px 0 -22px;
     padding: 6px;
@@ -941,6 +955,10 @@ footer p {
 
 
   /* FOOTER STYLE */
+  footer{
+    margin-top: 30px;
+  }
+
   footer p {
     font-size: 8px;
     line-height: 3.8;
@@ -972,6 +990,10 @@ footer p {
   }
 
   /* MAIN STYLE */
+  main {
+    margin-bottom: 25px;
+  }
+
   .undername-style h1 {
     font-size: 18px;
   }
@@ -1024,6 +1046,10 @@ footer p {
 
 
   /* FOOTER STYLE */
+  footer {
+    margin-top: 30px;
+  }
+
   footer p {
     font-size: 8px;
     line-height: 3.8;
